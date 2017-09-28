@@ -1,0 +1,69 @@
+// ---------------- Flex Grids --------------
+
+
+
+@each $label, $screen in $grid-breakpoints
+{
+	 @include bd-custom-min($screen){
+        
+			    .flex-#{$label}-grid{
+				@include display-flex;
+				@include flex-prop(flex-flow,row wrap);
+				&.flex-column{
+					@include flex-prop(flex-flow,column wrap);
+				}
+				&:after,&:before{
+					display: none;
+				}
+				> *{
+					max-width: 100%;
+				}
+
+				
+
+			}
+
+	 }
+}
+
+[class*='flex-']
+{
+	           &.flex-justify-space-between
+				{
+					@include justify-content(space-between);
+				}
+				&.flex-justify-center
+				{
+					@include justify-content(center);
+				}
+				&.flex-justify-space-around
+				{
+			       @include justify-content(space-around);
+				}
+				&.flex-justify-end
+				{
+			       @include justify-content(flex-end);
+				}
+				&.flex-align-bottom
+				{
+					@include align-items(flex-end);
+				}
+				&.flex-align-center
+				{
+					@include align-items(center);
+				}
+				&.flex-align-center
+				{
+					@include align-items(center);
+				}
+				&.flex-stretch-child
+				{
+					> *{
+						width: 100%;
+					}
+				}
+
+				&.row-reverse{
+					@include flex-prop(flex-flow,row-reverse wrap);
+				}
+}

@@ -1,0 +1,12 @@
+/*!
+ * Name   : Theme Name
+ * Author : Nirmal Premnath
+ */
+@import "base/variables",  // Custom variables
+        "base/mixins";    // Custom Mixins
+
+/* Bootstrap Grid */
+@import "vendors/bootstrap/bootstrap-grid";
+
+/* Main Theme */
+@import "partials/THEME";  

@@ -1,0 +1,30 @@
+{
+  "name": "Scafold",
+  "version": "1.0.0",
+  "description": "Dependencies for a Scafold",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:n4nirmal09/work-scafold.git"
+  },
+  "author": "Nirmal Premnath",
+  "license": "ISC",
+  "dependencies": {
+    "purify-css": "^1.1.9"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-inject-partials": "^1.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1",
+    "streamqueue": "^1.1.1"
+  }
+}
